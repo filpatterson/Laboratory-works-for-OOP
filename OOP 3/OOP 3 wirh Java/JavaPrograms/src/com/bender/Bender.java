@@ -11,12 +11,12 @@ import java.util.List;
 public class Bender {
 
     public static void main(String[] args) {
-        Path wiki_path = Paths.get("C:/temp", "three_expressions.txt");
+        Path somePath = Paths.get("C:/temp", "three_expressions.txt");
 
         Charset charset = Charset.forName("ISO-8859-1");
         try {
             List<String> brackets = new ArrayList<String>();
-            List<String> lines = Files.readAllLines(wiki_path, charset);
+            List<String> lines = Files.readAllLines(somePath, charset);
 
             for (String line : lines) {
                 System.out.println(line);
